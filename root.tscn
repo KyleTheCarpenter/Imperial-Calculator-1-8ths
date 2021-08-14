@@ -1,0 +1,693 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Sushi Delivery.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://Keyboard.gd" type="Script" id=2]
+[ext_resource path="res://World.gd" type="Script" id=3]
+
+[sub_resource type="DynamicFont" id=1]
+size = 44
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 30
+font_data = ExtResource( 1 )
+
+[node name="root" type="Node"]
+
+[node name="World" type="Node2D" parent="."]
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="bg" type="ColorRect" parent="World"]
+margin_left = 1.68179
+margin_top = -0.840881
+margin_right = 401.682
+margin_bottom = 639.159
+color = Color( 0.12549, 0.737255, 0.466667, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="bg2" type="ColorRect" parent="World"]
+margin_left = 14.6992
+margin_top = 11.6992
+margin_right = 390.699
+margin_bottom = 626.699
+color = Color( 0.156863, 0.807843, 0.521569, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="bg3" type="ColorRect" parent="World"]
+margin_left = 31.0
+margin_top = 103.0
+margin_right = 253.0
+margin_bottom = 165.0
+color = Color( 0.4, 0.792157, 0.619608, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="bg4" type="ColorRect" parent="World"]
+margin_left = 35.4949
+margin_top = 371.197
+margin_right = 257.495
+margin_bottom = 433.197
+color = Color( 0.4, 0.792157, 0.619608, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="bg5" type="ColorRect" parent="World"]
+margin_left = 33.9966
+margin_top = 233.353
+margin_right = 255.997
+margin_bottom = 295.353
+color = Color( 0.4, 0.792157, 0.619608, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name=";2" type="Label" parent="World"]
+margin_left = 32.6832
+margin_top = 18.6697
+margin_right = 368.683
+margin_bottom = 90.6697
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0.364706, 0.364706, 0.364706, 1 )
+text = "Imperial Calculator"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name=";3" type="Label" parent="World"]
+margin_left = 32.6832
+margin_top = 18.6697
+margin_right = 368.683
+margin_bottom = 90.6697
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0.364706, 0.364706, 0.364706, 1 )
+text = "Imperial Calculator"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name=";" type="Label" parent="World"]
+margin_left = 36.0468
+margin_top = 22.0333
+margin_right = 372.047
+margin_bottom = 94.0333
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0.113725, 0.113725, 0.113725, 1 )
+text = "Imperial Calculator"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="line1" type="Node2D" parent="World"]
+
+[node name=";" type="Label" parent="World/line1"]
+margin_left = 80.0
+margin_top = 112.0
+margin_right = 90.0
+margin_bottom = 166.0
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0.113725, 0.113725, 0.113725, 1 )
+text = "'"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name=";2" type="Label" parent="World/line1"]
+margin_left = 136.0
+margin_top = 112.0
+margin_right = 150.0
+margin_bottom = 166.0
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0.113725, 0.113725, 0.113725, 1 )
+text = "\""
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="dataFoot" type="Label" parent="World/line1"]
+margin_left = 8.0
+margin_top = 120.0
+margin_right = 80.0
+margin_bottom = 158.0
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "0"
+align = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="dataInch" type="Label" parent="World/line1"]
+margin_left = 88.0
+margin_top = 120.0
+margin_right = 136.0
+margin_bottom = 158.0
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "0"
+align = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name=";3" type="Line2D" parent="World/line1"]
+position = Vector2( 192, 136 )
+points = PoolVector2Array( -17, 16, 6, -10 )
+width = 3.0
+default_color = Color( 0, 0, 0, 1 )
+
+[node name="dataFrac" type="Label" parent="World/line1"]
+margin_left = 160.0
+margin_top = 120.0
+margin_right = 179.0
+margin_bottom = 158.0
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "0"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name=";4" type="Label" parent="World/line1"]
+margin_left = 204.0
+margin_top = 122.0
+margin_right = 223.0
+margin_bottom = 160.0
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "8"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="tline2" type="Node2D" parent="World"]
+position = Vector2( -5, 127 )
+
+[node name="\'" type="Label" parent="World/tline2"]
+margin_left = 81.0
+margin_top = 114.0
+margin_right = 91.0
+margin_bottom = 168.0
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0.113725, 0.113725, 0.113725, 1 )
+text = "'"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="\'2" type="Label" parent="World/tline2"]
+margin_left = 141.0
+margin_top = 113.0
+margin_right = 155.0
+margin_bottom = 167.0
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0.113725, 0.113725, 0.113725, 1 )
+text = "\""
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="dataFoot" type="Label" parent="World/tline2"]
+margin_left = 18.0
+margin_top = 122.0
+margin_right = 82.0
+margin_bottom = 160.0
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "0"
+align = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="dataInch" type="Label" parent="World/tline2"]
+margin_left = 85.0
+margin_top = 121.0
+margin_right = 141.0
+margin_bottom = 159.0
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "0"
+align = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Line2D" type="Line2D" parent="World/tline2"]
+position = Vector2( 197, 137 )
+points = PoolVector2Array( -17, 16, 6, -10 )
+width = 3.0
+default_color = Color( 0, 0, 0, 1 )
+
+[node name="dataFrac" type="Label" parent="World/tline2"]
+margin_left = 165.0
+margin_top = 121.0
+margin_right = 184.0
+margin_bottom = 159.0
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "0"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="8" type="Label" parent="World/tline2"]
+margin_left = 208.0
+margin_top = 121.0
+margin_right = 227.0
+margin_bottom = 159.0
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "8"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="tline3" type="Node2D" parent="World"]
+position = Vector2( -5, 127 )
+
+[node name="\'" type="Label" parent="World/tline3"]
+margin_left = 77.0
+margin_top = 249.0
+margin_right = 87.0
+margin_bottom = 303.0
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0.113725, 0.113725, 0.113725, 1 )
+text = "'"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="\'2" type="Label" parent="World/tline3"]
+margin_left = 141.0
+margin_top = 249.0
+margin_right = 155.0
+margin_bottom = 303.0
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0.113725, 0.113725, 0.113725, 1 )
+text = "\""
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="f" type="Label" parent="World/tline3"]
+margin_left = 3.0
+margin_top = 146.0
+margin_right = 43.0
+margin_bottom = 160.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="dataFoot" type="Label" parent="World/tline3"]
+margin_left = 13.0
+margin_top = 258.0
+margin_right = 77.0
+margin_bottom = 296.0
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "0"
+align = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="dataInch" type="Label" parent="World/tline3"]
+margin_left = 85.0
+margin_top = 257.0
+margin_right = 141.0
+margin_bottom = 295.0
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "0"
+align = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Line2D" type="Line2D" parent="World/tline3"]
+position = Vector2( 198, 270 )
+points = PoolVector2Array( -17, 16, 6, -10 )
+width = 3.0
+default_color = Color( 0, 0, 0, 1 )
+
+[node name="Line2D2" type="Line2D" parent="World/tline3"]
+position = Vector2( 70, 221 )
+points = PoolVector2Array( -17, 16, 292, 15 )
+width = 3.0
+default_color = Color( 0, 0, 0, 1 )
+
+[node name="Line2D3" type="Line2D" parent="World/tline3"]
+position = Vector2( 75.7832, 64.9886 )
+scale = Vector2( 1.006, 1.17999 )
+points = PoolVector2Array( -17, 16, 292, 15 )
+width = 3.0
+default_color = Color( 0, 0, 0, 1 )
+
+[node name="dataFrac" type="Label" parent="World/tline3"]
+margin_left = 165.0
+margin_top = 257.0
+margin_right = 184.0
+margin_bottom = 295.0
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "0"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="8" type="Label" parent="World/tline3"]
+margin_left = 209.0
+margin_top = 257.0
+margin_right = 228.0
+margin_bottom = 295.0
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "8"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="butAdd" type="Button" parent="World"]
+margin_left = 52.4949
+margin_top = 317.479
+margin_right = 129.495
+margin_bottom = 347.479
+text = "Add"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="butSet2" type="Button" parent="World"]
+margin_left = 286.0
+margin_top = 261.0
+margin_right = 363.0
+margin_bottom = 291.0
+text = "Set"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="butSet1" type="Button" parent="World"]
+margin_left = 285.0
+margin_top = 140.0
+margin_right = 362.0
+margin_bottom = 170.0
+text = "Set"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="butSub" type="Button" parent="World"]
+margin_left = 157.168
+margin_top = 317.479
+margin_right = 234.168
+margin_bottom = 347.479
+text = "Subtract"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="butSub2" type="Button" parent="World"]
+margin_left = 262.82
+margin_top = 316.641
+margin_right = 339.82
+margin_bottom = 346.641
+text = "Center"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="arrow" type="Label" parent="World"]
+margin_left = 58.899
+margin_top = 216.841
+margin_right = 98.899
+margin_bottom = 254.841
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 0.737255, 0.0823529, 0.0823529, 1 )
+text = "V"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="World/arrow"]
+margin_left = -6.0
+margin_top = 30.0
+margin_right = 19.0
+margin_bottom = 73.0
+color = Color( 0.690196, 0.0588235, 0.0588235, 0.188235 )
+
+[node name="Button" type="Button" parent="World"]
+margin_left = 21.3326
+margin_top = 492.665
+margin_right = 108.333
+margin_bottom = 526.665
+text = "Clear All"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="butSend" type="Button" parent="World"]
+visible = false
+margin_left = 143.33
+margin_top = 489.665
+margin_right = 236.33
+margin_bottom = 526.665
+text = "Send Up"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="butInch" type="Button" parent="World"]
+visible = false
+margin_left = 267.658
+margin_top = 487.991
+margin_right = 372.658
+margin_bottom = 528.991
+text = "Show Inches"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="World"]
+margin_left = 217.117
+margin_top = 620.465
+margin_right = 396.117
+margin_bottom = 634.465
+custom_colors/font_color = Color( 0, 0, 0, 0.278431 )
+text = "KyleTheCarpenter 2021 v1.0"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Keyboard" type="Node2D" parent="."]
+visible = false
+script = ExtResource( 2 )
+
+[node name="ColorRect" type="ColorRect" parent="Keyboard"]
+margin_left = 19.6055
+margin_top = 348.854
+margin_right = 240.605
+margin_bottom = 522.854
+rect_scale = Vector2( 1.6, 1.6 )
+color = Color( 0.709804, 0.709804, 0.709804, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect2" type="ColorRect" parent="Keyboard"]
+margin_left = 29.0
+margin_top = 354.0
+margin_right = 237.0
+margin_bottom = 518.0
+rect_scale = Vector2( 1.6, 1.6 )
+color = Color( 0.776471, 0.772549, 0.772549, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="butExit" type="Button" parent="Keyboard"]
+margin_left = 324.0
+margin_top = 363.0
+margin_right = 344.0
+margin_bottom = 383.0
+rect_scale = Vector2( 1.5, 1.5 )
+text = "X"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="but1" type="Button" parent="Keyboard"]
+margin_left = 36.0
+margin_top = 387.0
+margin_right = 78.9995
+margin_bottom = 415.0
+rect_scale = Vector2( 1.5, 1.5 )
+text = "1"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="but2" type="Button" parent="Keyboard"]
+margin_left = 108.0
+margin_top = 387.0
+margin_right = 151.0
+margin_bottom = 415.0
+rect_scale = Vector2( 1.5, 1.5 )
+text = "2"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="but3" type="Button" parent="Keyboard"]
+margin_left = 180.0
+margin_top = 387.0
+margin_right = 223.0
+margin_bottom = 415.0
+rect_scale = Vector2( 1.5, 1.5 )
+text = "3"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="but4" type="Button" parent="Keyboard"]
+margin_left = 36.0
+margin_top = 443.0
+margin_right = 78.9995
+margin_bottom = 471.0
+rect_scale = Vector2( 1.5, 1.5 )
+text = "4"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="but5" type="Button" parent="Keyboard"]
+margin_left = 108.0
+margin_top = 443.0
+margin_right = 151.0
+margin_bottom = 471.0
+rect_scale = Vector2( 1.5, 1.5 )
+text = "5"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="but6" type="Button" parent="Keyboard"]
+margin_left = 180.0
+margin_top = 443.0
+margin_right = 223.0
+margin_bottom = 471.0
+rect_scale = Vector2( 1.5, 1.5 )
+text = "6"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="but7" type="Button" parent="Keyboard"]
+margin_left = 36.0
+margin_top = 499.0
+margin_right = 78.9995
+margin_bottom = 527.0
+rect_scale = Vector2( 1.5, 1.5 )
+text = "7"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="but8" type="Button" parent="Keyboard"]
+margin_left = 108.0
+margin_top = 499.0
+margin_right = 151.0
+margin_bottom = 527.0
+rect_scale = Vector2( 1.5, 1.5 )
+text = "8"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="but9" type="Button" parent="Keyboard"]
+margin_left = 180.0
+margin_top = 499.0
+margin_right = 223.0
+margin_bottom = 527.0
+rect_scale = Vector2( 1.5, 1.5 )
+text = "9"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="but0" type="Button" parent="Keyboard"]
+margin_left = 108.0
+margin_top = 550.568
+margin_right = 151.0
+margin_bottom = 578.568
+rect_scale = Vector2( 1.5, 1.5 )
+text = "0"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="butEnter" type="Button" parent="Keyboard"]
+margin_left = 252.0
+margin_top = 547.0
+margin_right = 325.0
+margin_bottom = 590.0
+rect_scale = Vector2( 1.5, 1.5 )
+text = "Next"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="butBack" type="Button" parent="Keyboard"]
+margin_left = 276.0
+margin_top = 427.0
+margin_right = 318.0
+margin_bottom = 453.0
+rect_scale = Vector2( 1.5, 1.5 )
+text = "Prev"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="butClear" type="Button" parent="Keyboard"]
+margin_left = 276.0
+margin_top = 483.0
+margin_right = 323.0
+margin_bottom = 506.0
+rect_scale = Vector2( 1.5, 1.5 )
+text = "erase"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="pressed" from="World/butAdd" to="World" method="butAddPressed"]
+[connection signal="pressed" from="World/butSet2" to="World" method="butSet2Pressed"]
+[connection signal="pressed" from="World/butSet1" to="World" method="butSet1Pressed"]
+[connection signal="pressed" from="World/butSub" to="World" method="butSubPressed"]
+[connection signal="pressed" from="World/butSub2" to="World" method="butCenterPressed"]
+[connection signal="pressed" from="World/Button" to="World" method="butClearAllPressed"]
+[connection signal="pressed" from="World/butSend" to="World" method="butSendPressed"]
+[connection signal="pressed" from="World/butInch" to="World" method="buttonInches"]
+[connection signal="pressed" from="Keyboard/butExit" to="Keyboard" method="butExitPressed"]
+[connection signal="pressed" from="Keyboard/butExit" to="World" method="butExitpressed"]
+[connection signal="pressed" from="Keyboard/but1" to="Keyboard" method="but1Pressed"]
+[connection signal="pressed" from="Keyboard/but2" to="Keyboard" method="but2Pressed"]
+[connection signal="pressed" from="Keyboard/but3" to="Keyboard" method="but3Pressed"]
+[connection signal="pressed" from="Keyboard/but4" to="Keyboard" method="but4Pressed"]
+[connection signal="pressed" from="Keyboard/but5" to="Keyboard" method="but5Pressed"]
+[connection signal="pressed" from="Keyboard/but6" to="Keyboard" method="but6Pressed"]
+[connection signal="pressed" from="Keyboard/but7" to="Keyboard" method="but7Pressed"]
+[connection signal="pressed" from="Keyboard/but8" to="Keyboard" method="but8Pressed"]
+[connection signal="pressed" from="Keyboard/but9" to="Keyboard" method="but9Pressed"]
+[connection signal="pressed" from="Keyboard/but0" to="Keyboard" method="but0Pressed"]
+[connection signal="pressed" from="Keyboard/butEnter" to="World" method="butEnterPressed"]
+[connection signal="pressed" from="Keyboard/butBack" to="World" method="butBackPressed"]
+[connection signal="pressed" from="Keyboard/butClear" to="World" method="butClearPressed"]
